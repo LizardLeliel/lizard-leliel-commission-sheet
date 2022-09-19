@@ -2,14 +2,17 @@
 
 <!-- </app-router> -->
 
-<ul>
-  <li> <a routerLink="/"> Home </a> </li>
-  <li> <a routerLink="/test"> Test Page </a> </li>
-  <li> <a routerLink="/programming"> Programming Portfolio Page </a> </li>
-  <li> <a routerLink="/web-development"> Web Development Page </a> </li>
-  <li> <a routerLink="/art-commission"> Art Commission Page </a> </li>
-  <li> <a routerLink="/invalid"> Test 404 </a> </li>
-</ul>
+<div class="container pb-5">
+  <nav class="navbar navbar-expand-lg">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a class="nav-link" routerLink="/"> About Me </a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLink="/programming"> My Programming </a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLink="/web-development"> My Game Design </a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLink="/art"> Art Commissions </a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLink="/test"> Test Page </a> </li>
+      <li class="nav-item"> <a class="nav-link" routerLink="/invalid"> Test 404 </a> </li>
+    </ul>
+  </nav>
 
-
-<router-outlet> </router-outlet>
+  <router-outlet> </router-outlet>
+</div>

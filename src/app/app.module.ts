@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgbConfig } from '@ng-bootstrap/ng-bootstrap'; 
+
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module'
 
@@ -15,9 +17,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     PagesModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(ngbConfig: NgbConfig) {
+    ngbConfig.animation = false;
+  }
+}
