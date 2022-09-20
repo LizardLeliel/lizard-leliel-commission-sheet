@@ -1,6 +1,5 @@
 
-
-<!--  -->
+<!-- Digital -->
 <div class="card text-bg-dark border-light" style="height: 350px;">
 	<img class="card-img img-fluid"
 		style="object-fit: cover; object-position: center; height: inherit;"
@@ -14,38 +13,9 @@
 
 
 <div class="card-group">
-	<div class="card">
-		<div class="card-body p-3 text-dark bg-light">
-			<h3 class="card-title">Line-art</h3>
-			<p class="card-text">Price</p>
-		</div>
-
-		<img class="card-img-bottom img-fluid"
-			style="object-fit: cover; object-position: top; height: 300px;"
-			src= "https://cdn.discordapp.com/attachments/868662317238349874/955597187843252285/Hector_Illustration_No_Sketch_Layer.png">
-	</div>
-
-	<div class="card">
-		<div class="card-body p-3 text-dark bg-light">
-			<h3 class="card-title">Flat Shaded</h3>
-			<p class="card-text">Price</p>
-		</div>
-
-		<img class="card-img-bottom img-fluid"
-			style="object-fit: scale-down; object-position: center; height: 300px;"
-			src= "https://cdn.discordapp.com/attachments/1007697754023284907/1021402610730803231/Mark_and_Layla_Jumping_Crop.png">
-	</div>
-
-	<div class="card">
-		<div class="card-body p-3 text-dark bg-light">
-			<h3 class="card-title">Fully-Shaded</h3>
-			<p class="card-text">Price (IMAGE IS PLACEHOLDER)</p>
-		</div>
-
-		<img class="card-img-bottom img-fluid start-50"
-			style="object-fit: cover; object-position: center; height: 300px;"
-			src= "https://cdn.discordapp.com/attachments/720790291317260401/1021479558987395153/Hybris.png">
-	</div>
+	<app-style-commission-info [style-info]="DIGITAL_STYLES[0]" class="card"> </app-style-commission-info>
+	<app-style-commission-info [style-info]="DIGITAL_STYLES[1]" class="card"> </app-style-commission-info>
+	<app-style-commission-info [style-info]="DIGITAL_STYLES[2]" class="card"> </app-style-commission-info>
 </div>
 
 <hr>
@@ -64,37 +34,8 @@
 
 
 <div class="card-group">
-	<div class="card">
-		<div class="card-body p-3 text-dark bg-light">
-			<h3 class="card-title">Clean-ish Pencil Sketch</h3>
-			<p class="card-text">Price</p>
-		</div>
-
-		<img class="card-img-bottom img-fluid"
-			style="object-fit: cover; object-position: left; height: 300px;"
-			src= "https://cdn.discordapp.com/attachments/720790291317260401/805290879136301056/20210131_001314.jpg">
-	</div>
-
-	<div class="card">
-		<div class="card-body p-3 text-dark bg-light">
-			<h3 class="card-title">Charcoal</h3>
-			<p class="card-text">Price</p>
-		</div>
-
-		<img class="card-img-bottom img-fluid"
-			style="object-fit: cover; object-position: center; height: 300px;"
-			src="https://cdn.discordapp.com/attachments/720790291317260401/924127041467600956/20211224_215931.jpg">
-	</div>
-
-	<div class="card">
-		<div class="card-body p-3 text-dark bg-light">
-			<h3 class="card-title">Midtone Charcoal</h3>
-			<p class="card-text">Details of a Digital Commission</p>
-		</div>
-
-		<img class="card-img-bottom img-fluid"
-			style="object-fit: cover; object-position: center; height: 300px;"
-			src="https://cdn.discordapp.com/attachments/720790291317260401/993668447923863573/20220704_205004.jpg">
-	</div>
+	<app-style-commission-info [style-info]="TRADITIONAL_STYLES[0]" class="card"> </app-style-commission-info>
+	<app-style-commission-info [style-info]="TRADITIONAL_STYLES[1]" class="card"> </app-style-commission-info>
+	<app-style-commission-info [style-info]="TRADITIONAL_STYLES[2]" class="card"> </app-style-commission-info>
 </div>
 
