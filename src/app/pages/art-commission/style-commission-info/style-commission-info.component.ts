@@ -1,10 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, LOCALE_ID } from '@angular/core';
+import { getLocaleId, getLocaleCurrencyCode } from '@angular/common';
 
 // how do I make this less relative?
 import { StyleCommissionInfo } from '../../../data/commission-info';
 import { DevCurrencyConversionService } from '../dev-currency-conversion.service';
-
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-style-commission-info [style-info] .card',
@@ -14,7 +13,7 @@ import { Observable } from 'rxjs';
 export class StyleCommissionInfoComponent implements OnInit {
   public convertedRate: Promise<number>;
   public convertedCalculated: boolean = false;
-  
+
   @Input('style-info') styleInfo: StyleCommissionInfo = {
     name: "",
     description: "",
@@ -22,13 +21,20 @@ export class StyleCommissionInfoComponent implements OnInit {
     imgURL: "",
   }; 
 
-  constructor(private devCurrencyConversionService: DevCurrencyConversionService) {
+  constructor(
+    private devCurrencyConversionService: DevCurrencyConversionService) {
     this.convertedRate = new Promise(() => {}); // Empty promise to satisfy Angular type safety.
   }
 
   ngOnInit(): void {
-    this.convertedRate = this.devCurrencyConversionService.getConversion('CAD', this.styleInfo.USDPrice);
-    this.convertedRate.then(() => this.convertedCalculated = true);
+    const locale: string = 'en-CA';
+    const currencyCode: string = 'CAD'; 
+
+    if (locale && currencyCode != 'USD')
+    {
+      this.convertedRate = this.devCurrencyConversionService.getConversion(currencyCode, this.styleInfo.USDPrice);
+      this.convertedRate.then(() => this.convertedCalculated = true);
+    }
   }
 
 }
