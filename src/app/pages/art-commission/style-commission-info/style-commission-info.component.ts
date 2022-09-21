@@ -12,14 +12,23 @@ import { Observable } from 'rxjs';
   styleUrls: ['./style-commission-info.component.scss']
 })
 export class StyleCommissionInfoComponent implements OnInit {
-  public convertedRate?: Promise<number>;
+  public convertedRate: Promise<number>;
+  public convertedCalculated: boolean = false;
+  
+  @Input('style-info') styleInfo: StyleCommissionInfo = {
+    name: "",
+    description: "",
+    USDPrice: 0,
+    imgURL: "",
+  }; 
 
-
-  constructor(private devCurrencyConversionService: DevCurrencyConversionService) { }
+  constructor(private devCurrencyConversionService: DevCurrencyConversionService) {
+    this.convertedRate = new Promise(() => {}); // Empty promise to satisfy Angular type safety.
+  }
 
   ngOnInit(): void {
     this.convertedRate = this.devCurrencyConversionService.getConversion('CAD', this.styleInfo.USDPrice);
+    this.convertedRate.then(() => this.convertedCalculated = true);
   }
 
-  @Input('style-info') styleInfo: StyleCommissionInfo = < StyleCommissionInfo > {}; 
 }

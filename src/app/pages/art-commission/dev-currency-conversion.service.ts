@@ -181,13 +181,13 @@ const SAMPLE_CONVERSION_TABLE: any = {
   providedIn: 'root'
 })
 export class DevCurrencyConversionService {
-  private conversionRatePromises: any = {};
+  private conversionRatePromises: { [key: string]: Promise<number> } = {};
 
   constructor() { }
 
   public getConversion(currencyCode: string, USDValue: number): any {
     if (this.conversionRatePromises[currencyCode] == undefined) {
-      this.conversionRatePromises[currencyCode] = new Promise((resolve, reject) => {
+      this.conversionRatePromises[currencyCode] = new Promise<number>((resolve, reject) => {
         setTimeout(() => {
           resolve(SAMPLE_CONVERSION_TABLE['rates'][currencyCode]);
         }, 1500);

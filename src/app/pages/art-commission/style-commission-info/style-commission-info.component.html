@@ -4,6 +4,6 @@
 
 <div class="card-img-overlay p-3 text-light comm-style-header">
 	<h3 class="card-title">{{styleInfo.name}}</h3>
-	<h4 class="card-text">${{styleInfo.USDPrice}} USD <small> {{convertedRate | async | currency:'CAD' }} </small></h4> 
+	<h4 class="card-text">${{styleInfo.USDPrice}} USD <small *ngIf="convertedCalculated"> ({{convertedRate | async | currency:'CAD' }}) </small></h4> 
 </div>
 
