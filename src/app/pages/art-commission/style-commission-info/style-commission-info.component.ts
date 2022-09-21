@@ -5,6 +5,26 @@ import { getLocaleId, getLocaleCurrencyCode } from '@angular/common';
 import { StyleCommissionInfo } from '../../../data/commission-info';
 import { DevCurrencyConversionService } from '../dev-currency-conversion.service';
 
+const COMMON_LOCALE_CURRENCIES: { [key: string]: string } = {
+  'en-CA': 'CAD',
+  'fr-CA': 'CAD',
+
+  'en-AU': 'AUD',
+
+  'en-GB': 'GBP',
+
+  'en-US': 'USD',
+  'es-PR': 'USD',
+
+  'da': 'EUR',
+  'it-IT': 'EUR',
+  'de-DE': 'EUR',
+  'fr-FR': 'EUR',
+
+  'ja': 'JPY',
+};
+
+
 @Component({
   selector: 'app-style-commission-info [style-info] .card',
   templateUrl: './style-commission-info.component.html',
@@ -13,6 +33,8 @@ import { DevCurrencyConversionService } from '../dev-currency-conversion.service
 export class StyleCommissionInfoComponent implements OnInit {
   public convertedRate: Promise<number>;
   public convertedCalculated: boolean = false;
+
+  public localeCurrencyCode: string = '';
 
   @Input('style-info') styleInfo: StyleCommissionInfo = {
     name: "",
@@ -27,12 +49,12 @@ export class StyleCommissionInfoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    const locale: string = 'en-CA';
-    const currencyCode: string = 'CAD'; 
+    // Hack to show some currency conversions until I can do something more proper.
+    const locale: string = navigator.language;
+    this.localeCurrencyCode = COMMON_LOCALE_CURRENCIES[locale] || '';
 
-    if (locale && currencyCode != 'USD')
-    {
-      this.convertedRate = this.devCurrencyConversionService.getConversion(currencyCode, this.styleInfo.USDPrice);
+    if (this.localeCurrencyCode && this.localeCurrencyCode != 'USD') {
+      this.convertedRate = this.devCurrencyConversionService.getConversion(this.localeCurrencyCode, this.styleInfo.USDPrice);
       this.convertedRate.then(() => this.convertedCalculated = true);
     }
   }
