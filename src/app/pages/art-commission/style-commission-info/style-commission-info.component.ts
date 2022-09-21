@@ -2,6 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 
 // how do I make this less relative?
 import { StyleCommissionInfo } from '../../../data/commission-info';
+import { DevCurrencyConversionService } from '../dev-currency-conversion.service';
+
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-style-commission-info [style-info] .card',
@@ -9,10 +12,14 @@ import { StyleCommissionInfo } from '../../../data/commission-info';
   styleUrls: ['./style-commission-info.component.scss']
 })
 export class StyleCommissionInfoComponent implements OnInit {
-  @Input('style-info') styleInfo: StyleCommissionInfo = <StyleCommissionInfo> {}; 
+  public convertedRate?: Promise<number>;
 
-  constructor() { }
+
+  constructor(private devCurrencyConversionService: DevCurrencyConversionService) { }
 
   ngOnInit(): void {
+    this.convertedRate = this.devCurrencyConversionService.getConversion('CAD', this.styleInfo.USDPrice);
   }
+
+  @Input('style-info') styleInfo: StyleCommissionInfo = < StyleCommissionInfo > {}; 
 }
