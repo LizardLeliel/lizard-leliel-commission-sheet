@@ -1,10 +1,4 @@
-
-export interface StyleCommissionInfo {
-	name: string;
-	description: string | undefined;
-	USDPrice: number;
-	imgURL: string;
-}
+import { StyleCommissionInfo } from '../models/commission-info';
 
 
 // Don't forget to give these approximate USD values...

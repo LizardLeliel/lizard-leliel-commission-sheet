@@ -6,7 +6,9 @@ import { ProgrammingComponent } from './programming/programming.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { ArtCommissionComponent } from './art-commission/art-commission.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { StyleCommissionInfoComponent } from './art-commission/style-commission-info/style-commission-info.component';
+
+import { StyleCommissionInfoComponent } from '../components/style-commission-info/style-commission-info.component';
+// './art-commission/style-commission-info/style-commission-info.component';
 
 
 

@@ -2,8 +2,8 @@ import { Component, OnInit, Input, LOCALE_ID } from '@angular/core';
 import { getLocaleId, getLocaleCurrencyCode } from '@angular/common';
 
 // how do I make this less relative?
-import { StyleCommissionInfo } from '../../../data/commission-info';
-import { DevCurrencyConversionService } from '../dev-currency-conversion.service';
+import { StyleCommissionInfo } from '../../models/commission-info';
+import { DevCurrencyConversionService } from '../../services/dev-currency-conversion/dev-currency-conversion.service';
 
 const COMMON_LOCALE_CURRENCIES: { [key: string]: string } = {
   'en-CA': 'CAD',
