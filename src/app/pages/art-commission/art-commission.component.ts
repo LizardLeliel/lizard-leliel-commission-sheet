@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { StyleCommissionInfoComponent } from '../../components/style-commission-info/style-commission-info.component';
+import { WideCardRowComponent } from '../../components/wide-card-row/wide-card-row.component'; 
 
 import { StyleCommissionInfo } from '../../models/commission-info'; 
 import { DIGITAL_STYLES, TRADITIONAL_STYLES} from '../../data/commission-info';

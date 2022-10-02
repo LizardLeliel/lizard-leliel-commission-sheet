@@ -1,0 +1,14 @@
+
+
+
+<img class="card-img" [src]=image>
+<div class="card-img-overlay p-4" style="height: 280px">
+	<div class="card-title">
+		<ng-content select="h1, h2, h3, h4, h5, h6"> </ng-content>
+	</div>
+	<div class="card-text">
+		<ng-content select="p"> </ng-content>
+	</div>
+
+	<ng-content></ng-content>
+</div>
