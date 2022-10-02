@@ -1,0 +1,23 @@
+
+.commission-style {
+	overflow: hidden;
+	border-radius: 8px;
+	height: content;
+
+	.card {
+		border: 0px;
+	}
+
+	.commission-style-banner {
+		height: 350px;
+
+		border-radius: 0px;
+
+		img {
+			object-fit: cover;
+			object-position: center;
+			height: inherit;
+
+		}
+	}
+}

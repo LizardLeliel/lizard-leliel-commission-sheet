@@ -1,46 +1,48 @@
 <!-- Digital -->
-<div class="card text-bg-dark border-light" style="height: 350px; text-shadow: #000 0px 0px 2px;">
-	<img class="card-img img-fluid"
-		style="object-fit: cover; object-position: center; height: inherit;"
-		src="https://cdn.discordapp.com/attachments/551518495020417045/1018545383594541179/Below_Crystal_Chasm.png">
 
-	<div class="card-img-overlay p-5">
-		<h1 class="card-title">Digital</h1>
-		<p class="card-text">Details of a Digital Commission</p>
+<div class="commission-style">
+	<div class="card text-bg-dark commission-style-banner pop-text">
+		<img class="card-img img-fluid" src="https://cdn.discordapp.com/attachments/551518495020417045/1018545383594541179/Below_Crystal_Chasm.png">
+
+		<div class="card-img-overlay p-5">
+			<h1 class="card-title">Digital</h1>
+			<p class="card-text">Details of a Digital Commission</p>
+		</div>
+	</div>
+
+	<div class="card-group">
+		<app-style-commission-info [style-info]="DIGITAL_STYLES[0]" class="card"> </app-style-commission-info>
+		<app-style-commission-info [style-info]="DIGITAL_STYLES[1]" class="card"> </app-style-commission-info>
+		<app-style-commission-info [style-info]="DIGITAL_STYLES[2]" class="card"> </app-style-commission-info>
 	</div>
 </div>
 
 
-<div class="card-group">
-	<app-style-commission-info [style-info]="DIGITAL_STYLES[0]" class="card"> </app-style-commission-info>
-	<app-style-commission-info [style-info]="DIGITAL_STYLES[1]" class="card"> </app-style-commission-info>
-	<app-style-commission-info [style-info]="DIGITAL_STYLES[2]" class="card"> </app-style-commission-info>
-</div>
 
 <hr>
 
 <!-- Traditional -->
-<div class="card text-bg-dark mt-3 border-light" style="height: 350px; text-shadow: #000 0px 0px 2px;">
-	<img class="card-img img-fluid"
-		style="object-fit: cover; object-position: top; height: inherit;" 
-		src="https://cdn.discordapp.com/attachments/720790291317260401/798698875049082880/20210112_194047.jpg">
+<div class="commission-style">
+	<div class="card text-bg-dark mt-3 border-light commission-style-banner pop-text">
+		<img class="card-img img-fluid"	src="https://cdn.discordapp.com/attachments/720790291317260401/798698875049082880/20210112_194047.jpg">
 
-	<div class="card-img-overlay p-5">
-		<h1 class="card-title">Traditional</h1>
-		<p class="card-text">Details of a Digital Commission</p>
+		<div class="card-img-overlay p-5">
+			<h1 class="card-title">Traditional</h1>
+			<p class="card-text">Details of a Digital Commission</p>
+		</div>
 	</div>
-</div>
 
 
-<div class="card-group">
-	<app-style-commission-info [style-info]="TRADITIONAL_STYLES[0]" class="card"> </app-style-commission-info>
-	<app-style-commission-info [style-info]="TRADITIONAL_STYLES[1]" class="card"> </app-style-commission-info>
-	<app-style-commission-info [style-info]="TRADITIONAL_STYLES[2]" class="card"> </app-style-commission-info>
+	<div class="card-group">
+		<app-style-commission-info [style-info]="TRADITIONAL_STYLES[0]" class="card"> </app-style-commission-info>
+		<app-style-commission-info [style-info]="TRADITIONAL_STYLES[1]" class="card"> </app-style-commission-info>
+		<app-style-commission-info [style-info]="TRADITIONAL_STYLES[2]" class="card"> </app-style-commission-info>
+	</div>
 </div>
 
 <hr>
 
-<div class="card" style="border-radius: 8px; overflow: hidden; text-shadow: #000 0px 0px 3px; color: white; height: fit-content;">
+<div class="card wide-card pop-text">
 	<app-wide-card-row img="https://cdn.discordapp.com/attachments/414923170538061835/1023755728109969540/A_Perfect_World_2.png">
 		<h3> Complicated Backgrounds </h3>
 		<p> Backgrounds with distinguishable landscape features </p>
@@ -50,7 +52,7 @@
 
 	<app-wide-card-row img="https://cdn.discordapp.com/attachments/720790291317260401/956380839447511040/20220321_165933.png">
 		<h3> Multiple Characters </h3>
-		<p> Each additional character will be charged full price as above. </p>
-		<p> However, if the commission is PMD-themed and the second character is a "partner" character, there is a 50% discount for that character only. </p>
+		<p class="pop-text-strong"> Each additional character will be charged full price as above. </p>
+		<p class="pop-text-strong"> However, if the commission is PMD-themed and the second character is a "partner" character, there is a 50% discount for that character only. </p>
 	</app-wide-card-row>
 </div>

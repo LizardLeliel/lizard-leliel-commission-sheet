@@ -2,3 +2,20 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+
+.wide-card {
+	height: fit-content;
+	color: white;
+
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.pop-text {
+	text-shadow: #000 0px 0px 3px;
+}
+
+.pop-text-strong {
+	text-shadow: #000 0px 0px 5px;
+}
