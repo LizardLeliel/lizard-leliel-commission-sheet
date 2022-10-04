@@ -6,8 +6,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { StyleCommissionInfoComponent } from '../components/style-commission-info/style-commission-info.component';
 import { WideCardRowComponent } from '../components/wide-card-row/wide-card-row.component';
-// './art-commission/style-commission-info/style-commission-info.component';
-
 
 
 @NgModule({

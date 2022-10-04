@@ -7,8 +7,6 @@ import { StyleCommissionInfo } from '../../models/commission-info';
 import { DIGITAL_STYLES, TRADITIONAL_STYLES} from '../../data/commission-info';
 
 
-import { CurrencyConversionService } from '../../services/currency-conversion/currency-conversion.service';
-
 @Component({
   selector: 'page-art-commission',
   templateUrl: './art-commission.component.html',
@@ -18,7 +16,6 @@ export class ArtCommissionComponent implements OnInit {
   readonly DIGITAL_STYLES: StyleCommissionInfo[] = DIGITAL_STYLES;  
   readonly TRADITIONAL_STYLES: StyleCommissionInfo[] = TRADITIONAL_STYLES;  
 
-  // constructor(private CurrencyConversion: CurrencyConversionService) { }
   constructor() { }
 
   ngOnInit(): void {
