@@ -9,6 +9,8 @@ import { PagesModule } from './pages/pages.module'
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     PagesModule,
     AppRoutingModule,
     NgbModule,
+
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

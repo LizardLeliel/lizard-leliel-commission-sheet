@@ -18,7 +18,8 @@ export class ArtCommissionComponent implements OnInit {
   readonly DIGITAL_STYLES: StyleCommissionInfo[] = DIGITAL_STYLES;  
   readonly TRADITIONAL_STYLES: StyleCommissionInfo[] = TRADITIONAL_STYLES;  
 
-  constructor(private CurrencyConversion: CurrencyConversionService) { }
+  // constructor(private CurrencyConversion: CurrencyConversionService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
