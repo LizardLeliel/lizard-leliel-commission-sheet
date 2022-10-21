@@ -1,4 +1,6 @@
 
+
+
 .commission-style {
 	overflow: hidden;
 	border-radius: 8px;
@@ -9,15 +11,80 @@
 	}
 
 	.commission-style-banner {
-		height: 350px;
+		height: 320px;
 
 		border-radius: 0px;
 
 		img {
 			object-fit: cover;
-			object-position: center;
+			/* object-position: center; */
 			height: inherit;
-
 		}
+	}
+}
+
+
+.wide-card-container {
+	border-radius: 8px;
+	object-fit: cover;
+	height: content;
+
+	.wide-card-title {
+		padding: 2rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		/* background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .8));*/
+		background-color: #333;
+		color: white;
+	}
+
+	.wide-card {
+		border-radius: 0px;
+
+		.card-img-overlay {
+			padding: 2rem;
+		}
+	}
+}
+
+.card-img.left-side {
+	/* the 4rem accounts for padding. I'll use scss variables later */
+	width: 50%
+}
+
+.card-img.right-side {
+	width: 50%;
+	position: absolute;
+	right: 0px;
+}
+
+.card-text.bottom {
+	position: absolute;
+	bottom: 2rem;
+}
+
+.card-text.bottom-left {
+	position: absolute;
+	bottom: 2rem;
+	width: calc(50% - 4rem);
+}
+
+.card-text.bottom-right {
+	position: absolute;
+	bottom: 2rem;
+	left: calc(50% + 2rem);
+	width: calc(50% - 4rem);
+}
+
+.spanning-header {
+	.left-hedder {
+		width: 50%;
+	}
+
+	.right-header {
+		position: absolute;
+		left: calc(50% + 2rem);
+		width: 50%;
 	}
 }

@@ -5,17 +5,46 @@
 
 
 .wide-card {
+	position: relative;
 	height: fit-content;
 	color: white;
 
 	border-radius: 8px;
 	overflow: hidden;
+
+	img {
+		object-fit: cover;
+		border-radius: 0px;
+
+		height: inherit;
+	}
+}
+
+.header-gradient {
+	height: fit-content;
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
 
 .pop-text {
-	text-shadow: #000 0px 0px 3px;
+	text-shadow: #000 0px 0px 5px;
 }
 
 .pop-text-strong {
 	text-shadow: #000 0px 0px 5px;
+}
+
+img.top {
+	object-position: top;
+}
+
+img.left {
+	object-position: left;
+}
+
+img {
+	object-position: center;
+}
+
+p {
+	font-size: 18px;
 }

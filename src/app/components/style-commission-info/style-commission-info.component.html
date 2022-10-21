@@ -1,6 +1,6 @@
 <img class="card-img-bottom img-fluid" [src]="styleInfo.imgURL">
 
-<div class="card-img-overlay p-3 text-light comm-style-header pop-text">
+<div class="card-img-overlay p-3 text-light header-gradient pop-text">
 	<h3 class="card-title">{{styleInfo.name}}</h3>
 	<h4 class="card-text">${{styleInfo.USDPrice}} USD <small *ngIf="convertedCalculated"> ({{convertedRate | async | currency:localeCurrencyCode }}) </small></h4> 
 </div>

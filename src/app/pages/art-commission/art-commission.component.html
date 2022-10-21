@@ -4,61 +4,197 @@
 <!--  being inadvertedly doubled. -->
 <p> Note: automatic price conversion is an approximation and may detect your preferred currency incorrectly. </p>
 
+
+
+<!-- Traditional -->
+<div class="commission-style">
+	<div class="card text-bg-dark commission-style-banner pop-text">
+		<img class="card-img img-fluid top"	src="/assets/bannerTraditional.png">
+
+		<div class="card-img-overlay header-gradient p-5">
+			<h1 class="card-title">Base Prices - Traditional</h1>
+			<p class="card-text pop-text-strong" style="width: 66%">Below are the various styles I do commissions in. Prices reflect simple backgrounds with profile framing (see below). Final drawing will be carefully photographed, cropped, and emailed on completion.</p>
+		</div>
+	</div>
+
+
+	<div class="card-group">
+		<ng-container *ngFor="let tradStyle of TRADITIONAL_STYLES">
+			<app-style-commission-info [style-info]="tradStyle" class="card"> </app-style-commission-info>
+		</ng-container>
+	</div>
+</div>
+
+<hr>
+
 <!-- Digital -->
 
 <div class="commission-style">
 	<div class="card text-bg-dark commission-style-banner pop-text">
 		<img class="card-img img-fluid" src="https://cdn.discordapp.com/attachments/551518495020417045/1018545383594541179/Below_Crystal_Chasm.png">
 
-		<div class="card-img-overlay p-5">
-			<h1 class="card-title">Digital</h1>
-			<p class="card-text">Details of a Digital Commission</p>
+		<div class="card-img-overlay header-gradient p-5">
+			<h1 class="card-title"> Digital</h1>
+			<h3 class="card-text"><b>Currently Unavailable</b></h3>
 		</div>
 	</div>
 
+	<!--
 	<div class="card-group">
-		<app-style-commission-info [style-info]="DIGITAL_STYLES[0]" class="card"> </app-style-commission-info>
-		<app-style-commission-info [style-info]="DIGITAL_STYLES[1]" class="card"> </app-style-commission-info>
-		<app-style-commission-info [style-info]="DIGITAL_STYLES[2]" class="card"> </app-style-commission-info>
+		<ng-container *ngFor="let digiStyle of DIGITAL_STYLES">
+			<app-style-commission-info [style-info]="digiStyle" class="card"> </app-style-commission-info>
+		</ng-container>
 	</div>
+	-->
 </div>
-
-
 
 <hr>
 
-<!-- Traditional -->
 <div class="commission-style">
-	<div class="card text-bg-dark commission-style-banner pop-text">
-		<img class="card-img img-fluid"	src="https://cdn.discordapp.com/attachments/720790291317260401/798698875049082880/20210112_194047.jpg">
 
-		<div class="card-img-overlay p-5">
-			<h1 class="card-title">Traditional</h1>
-			<p class="card-text">Details of a Digital Commission</p>
+	<div class="card text-bg-dark commission-style-banner pop-text" style="height: 380px">
+		<img class="card-img img-fluid"	src="/assets/bannerAdditionalConsiderations.png">
+
+		<div class="card-img-overlay header-gradient p-5">
+			<h1 class="card-title">Commission Options</h1>
+			<!-- <p class="card-text" style="width: 50%">Certain features cost an additional fee. Information about this is below.</p> -->
 		</div>
 	</div>
 
+	<div class="wide-card-container">
 
-	<div class="card-group">
-		<app-style-commission-info [style-info]="TRADITIONAL_STYLES[0]" class="card"> </app-style-commission-info>
-		<app-style-commission-info [style-info]="TRADITIONAL_STYLES[1]" class="card"> </app-style-commission-info>
-		<app-style-commission-info [style-info]="TRADITIONAL_STYLES[2]" class="card"> </app-style-commission-info>
+		<!-- Full body vs. Bust Shots -->
+		<div class="wide-card-title pop-text"> <h1> Character Framing </h1> </div>
+		<div class="card wide-card pop-text">
+			<img class="card-img left-side" style="height: 320px" src="/assets/additionalBust.png">
+			<img class="card-img right-side left" style="height: 320px;" src="/assets/additionalFullPortrait.png">
+
+
+
+			<div class="card-img-overlay header-gradient">
+				<h3 class="card-text spanning-header">
+					<span class="left-header">Portrait </span>
+					<span class="right-header">Full-Body </span>
+				</h3>
+
+				<p class="card-text spanning-header">
+					<span class="left-header"> Subject is framed from the shoulders and up. </span>
+					<span class="right-header"> The subject's is framed beyond just their shoulders and head. </span>
+				</p>
+
+			</div>
+
+			<div class="card-img-overlay"> 
+				<div class="card-text bottom-left"> 
+					<h4> FREE </h4>
+				</div>
+
+				<div class="card-text bottom-right"> 
+					<h4 class="mb-0"> +$10 USD </h4>
+					<h4> (+$5 if clean sketch) </h4> 
+			    </div>
+			</div>
+		</div>
+
+
+
+		<!-- Backgrounds -->
+		<div class="wide-card-title pop-text"> <h1> Background </h1> </div>
+		<div class="card wide-card pop-text-strong">
+
+			<img class="card-img left-side" style="height: 320px" src="/assets/additionalBackgroundSimple.png">
+			<img class="card-img right-side left" style="height: 320px;" src="/assets/additionalBackgroundComplex.png">
+
+
+			<div class="card-img-overlay header-gradient">
+				<div class="card-titlet"> 
+					<h3 class="spanning-header">
+						<span class="left-header">Simple Background</span>
+						<span class="right-header">Complex Background </span>
+					</h3>
+
+					<p class="spanning-header">
+						<span class="left-header"> Background is a light pattern. </span>
+						<span class="right-header"> Background has recognizable features. </span>
+					</p>
+				</div>
+			</div>
+
+			<div class="card-img-overlay">
+				<div class="card-text bottom-left"> 
+					<h4> FREE </h4>
+				</div>
+
+				<div class="card-text bottom-right"> 
+					<h4 class="mb-0"> +$20 USD </h4>
+					<h4> (+$10 if clean sketch) </h4> 
+			    </div>
+			</div>
+		</div>
+
+
+		<!-- Multiple Characters -->
+		<div class="wide-card-title"> <h1> Multiple characters </h1> </div>
+		<div class="card wide-card">
+			<img class="card-img" style="width: 66%; height: 600px" src="/assets/additionalMultipleCharacters.png">
+
+			<div class="card-img-overlay pop-text" style="background-color: #333; height: 100%; width: 34%; position: absolute; left: 66%; border-radius: 0px">
+				<div class="card-text" > 
+					<h3> Regular </h3>
+					<p> 
+						The base price will be re-applied for each character with $10 USD taken off. Framing charges will not be applied twice;
+						only the largest-framed character will be charged.
+					</p>
+					<br>
+					<h3> PMD Discount! </h3>
+					<p> If your two characters are the hero and partner of your PMD story, the second character will be <b>50% off.</b></p>
+				</div>
+
+			</div>
+		</div>
 	</div>
 </div>
 
 <hr>
 
-<div class="card wide-card pop-text">
-	<app-wide-card-row img="https://cdn.discordapp.com/attachments/414923170538061835/1023755728109969540/A_Perfect_World_2.png">
-		<h3> Complicated Backgrounds </h3>
-		<p> Backgrounds with distinguishable landscape features </p>
-		<p> +$15 <br> (+$10 for sketches) </p>
-	</app-wide-card-row>
+<h2> What about emotes, character reference sheets, story covers, and profile icons? </h2>
+<p> Emotes, character reference sheets, story covers, and profile icons will be treated as regular commissions, and will be priced accordingly. </p>
+
+<h2> What I will and won't draw </h2>
+<h3> Will draw: </h3>
+<ul>
+	<li> Humans </li>
+	<li> Pokemon </li>
+	<li> Anthros ("Furry") </li>
+	<li> Animals </li>
+	<li> Mechs </li>
+	<li> Gore and Violence </li>
+</ul>
+
+<h3> Will not draw: </h3>
+<ul>
+	<li> Hateful and bigoted art </li>
+	<li> Anything else I choose not to draw </li>
+</ul>
+
+<h3> "What about x? It's not listed!" </h3>
+<p>Ask!</p>
 
 
-	<app-wide-card-row img="https://cdn.discordapp.com/attachments/720790291317260401/956380839447511040/20220321_165933.png">
-		<h3> Multiple Characters </h3>
-		<p class="pop-text-strong"> Each additional character will be charged full price as above. </p>
-		<p class="pop-text-strong"> However, if the commission is PMD-themed and the second character is a "partner" character, there is a 50% discount for that character only. </p>
-	</app-wide-card-row>
-</div>
+
+<h1> Commission Me! </h1>
+<p> To request a commission, email your commission details at <a href="mailto:halifaxlarose@gmail.com?subject=I want a commission!&body=Write the details of your commission here:">halifaxlarose@gmail.com</a> or reach out to Lizard#7967 on Discord. I will list a price calculated from the information above and once all details and initial payments are settled. </p>
+
+<p> Please give me as much detail about your desired commission as possible! </p>
+
+
+<h1> Terms of use </h1>
+<ul>
+	<li> I will charge 50% up front and 50% at completion. This will be changed to 100% up-front charge at a later date.</li>
+	<li> At significant milestones, I will show you a work-in-progress and ask for your feedback. Changes are generally free, although I will charge a fee if I feel the original details of the commission are being changed. </li>
+	<li> I will ask if the artwork may be showcased on my commission sheet. You are free to refuse this. </li>
+	<li> All art will feature my signature as a watermark. This is not negotiable. </li>
+	<li> I will try to complete your commission within two weeks. If I'm unable to meet that deadline due to obligations that take priority, I will reach out to you and notify you of the delay. </li>
+	<li> If you share a commission publically, please credit me as "LizardLeliel!" </li>
+	<li> You may use a commission to promote your story, as long as I receive proper credit </li>
+</ul>

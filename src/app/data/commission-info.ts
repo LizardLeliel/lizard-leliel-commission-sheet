@@ -25,21 +25,48 @@ export const DIGITAL_STYLES: StyleCommissionInfo[] = [
 
 export const TRADITIONAL_STYLES: StyleCommissionInfo[] = [
 	{
-		name: 		 "Pencil Sketch",
+		name: 		 "Clean Sketch",
 		description: "Graphite pencil drawing with contour boldly outlined.",
 		USDPrice:	 15,
-		imgURL: 	 "https://cdn.discordapp.com/attachments/720790291317260401/805290879136301056/20210131_001314.jpg",
+		// imgURL: 	 "https://cdn.discordapp.com/attachments/720790291317260401/805290879136301056/20210131_001314.jpg",
+		imgURL: 	 "/assets/styleTradSketch.png",
+	},
+	{
+		name: 		 "Shaded Graphite",
+		description: "Graphite pencil drawing with shading, bold contour outlining.",
+		USDPrice:	 35,
+		imgURL: 	 "/assets/styleTradShaded.png"
 	},
 	{
 		name: 		 "Charcoal",
 		description: "Character will be drawn with charcoal, giving the piece rich black-and-white values",
 		USDPrice:	 50,
-		imgURL: 	 "https://cdn.discordapp.com/attachments/720790291317260401/924127041467600956/20211224_215931.jpg",
+		imgURL: 	 "/assets/styleTradCharcoal.png",
 	},
 	{
 		name: 		 "Midtone Paper Charcoal",
 		description: "Character will be drawn with charcoal and chalk on midtone paper, giving greather depth to the range of tones.",
 		USDPrice:	 60,
-		imgURL: 	 "https://cdn.discordapp.com/attachments/720790291317260401/993668447923863573/20220704_205004.jpg",
+		imgURL: 	 "/assets/styleTradMidtone.png",
 	},
 ];
+
+export const ADDITIONAL_INFO: { [key: string]: number } = {
+	bustShot: 0,
+	fullBody: 10,
+
+	complicatedBackground: 20,
+	simpleBackground: 0,
+}
+
+
+// Bust shot vs. full framing
+// Complciated background vs. simple background
+// multiple characters
+// PMD discount
+
+
+// What about Reference sheets, covers, and emotes?
+//  Will be treated as normal commissions. I am currently not commissioning emotes.
+
+//
