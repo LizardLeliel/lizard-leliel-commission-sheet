@@ -31,6 +31,8 @@
 			object-fit: cover;
 			/* object-position: center; */
 			height: inherit;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
 		}
 	}
 
@@ -48,7 +50,7 @@
 			/*width: 100%;*/
 		}
 
-		img {
+		img.bump-left-on-small {
 			object-position: top 0px right -260px;
 		}
 	}
