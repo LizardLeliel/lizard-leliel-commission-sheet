@@ -1,7 +1,19 @@
 
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
 
+.content-card {
+	&:hover {
+		box-shadow: 0 1.5rem 5rem rgba($black, .175) !important; /* Fight BS's shadow-lg !important */
+	}	
+}
 
 .commission-style {
+	&:hover {
+		box-shadow: 0 1.5rem 5rem rgba($black, .175) !important; /* Fight BS's shadow-lg !important */
+	}
+
 	overflow: hidden;
 	border-radius: 8px;
 	height: content;
@@ -11,7 +23,7 @@
 	}
 
 	.commission-style-banner {
-		height: 320px;
+		height: 320px;		
 
 		border-radius: 0px;
 
@@ -21,6 +33,26 @@
 			height: inherit;
 		}
 	}
+
+	.card-text {
+		width: 66%;
+	}
+
+
+	@include media-breakpoint-down(sm) {
+		.commission-style-banner {
+			height:  500px;
+		}
+
+		.card-text {
+			/*width: 100%;*/
+		}
+
+		img {
+			object-position: top 0px right -260px;
+		}
+	}
+
 }
 
 
@@ -92,7 +124,13 @@
 }
 
 .commission-me {
-	font-size:  3.8rem;
-	padding-top:  2.4rem;
-	padding-bottom: 2.4rem;
+	&:hover {
+		box-shadow: 0 1.8rem 6rem rgba($black, .175) !important; /* Fight BS's shadow-lg !important */
+	}
+
+	h1 {
+		font-size:  3.8rem;
+		padding-top:  2.4rem;
+		padding-bottom: 2.4rem;
+	}
 }

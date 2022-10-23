@@ -1,11 +1,14 @@
 :host {
 	border-radius: 0px;
+	margin-bottom: 0 !important;
 }
 
 img {
 	object-fit: cover;
 	object-position: top;
 	height: 300px;
+
+	border-radius: 0;
 }
 
 .card-img-overlay {
