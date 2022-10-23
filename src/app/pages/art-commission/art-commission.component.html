@@ -1,8 +1,10 @@
-<h1> THIS PAGE AND WEBSITE IS A WORK IN PROGRESS! </h1>
+<div class="bigger-text">
+	<h1 class="text-center"> Lizard Leliel Commissions </h1>
+</div>
 
 <!-- TODO: Determine if user's currency conversion can be even done and don't show this message. Currently worried about API key usage -->
 <!--  being inadvertedly doubled. -->
-<p> Note: automatic price conversion is an approximation and may detect your preferred currency incorrectly. </p>
+<p *ngIf="isNotUSD()==true"> <u>Note</u>: automatic price conversion is an approximation and may detect your preferred currency incorrectly. </p>
 
 
 
@@ -92,7 +94,7 @@
 
 				</div>
 				<div class="card-img-overlay">
-					<h4 class="card-text bottom"> +$10 USD <br> (+$5 if clean sketch)
+					<h4 class="card-text bottom"> +<span [app-quick-currency-convert]="ADDITIONAL_INFO.fullBody"></span> <br> (+<span [app-quick-currency-convert]="ADDITIONAL_INFO.fullBodySketch" [show-code]="false"></span> if clean sketch)
 					</h4>
 				</div>
 			</div>
@@ -127,7 +129,7 @@
 
 				</div>
 				<div class="card-img-overlay">
-					<h4 class="card-text bottom"> +$20 USD <br> (+$10 if clean sketch)
+					<h4 class="card-text bottom"> +<span [app-quick-currency-convert]="ADDITIONAL_INFO.complicatedBackground"></span> <br> (+<span [app-quick-currency-convert]="ADDITIONAL_INFO.complicatedBackgroundSketch" [show-code]="false"></span> if clean sketch)
 					</h4>
 				</div>
 			</div>

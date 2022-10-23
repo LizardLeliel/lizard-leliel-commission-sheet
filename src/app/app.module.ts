@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HttpClientModule } from '@angular/common/http';
+import { QuickCurrencyConvertComponent } from './components/quick-currency-convert/quick-currency-convert.component';
 
 @NgModule({
   declarations: [

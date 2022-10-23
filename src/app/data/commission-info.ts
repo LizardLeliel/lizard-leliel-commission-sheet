@@ -46,7 +46,7 @@ export const TRADITIONAL_STYLES: StyleCommissionInfo[] = [
 	{
 		name: 		 "Midtone Paper Charcoal",
 		description: "Character will be drawn with charcoal and chalk on midtone paper, giving greather depth to the range of tones.",
-		USDPrice:	 60,
+		USDPrice:	 55,
 		imgURL: 	 "/assets/styleTradMidtone.png",
 	},
 ];
@@ -54,9 +54,11 @@ export const TRADITIONAL_STYLES: StyleCommissionInfo[] = [
 export const ADDITIONAL_INFO: { [key: string]: number } = {
 	bustShot: 0,
 	fullBody: 10,
+	fullBodySketch: 5,
 
-	complicatedBackground: 20,
 	simpleBackground: 0,
+	complicatedBackground: 15,
+	complicatedBackgroundSketch: 10,
 }
 
 

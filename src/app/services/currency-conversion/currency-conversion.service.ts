@@ -23,7 +23,7 @@ export class CurrencyConversionService {
     if (USER_APPROX_PREFERRED_CURRENCY != '') {
       this.conversionTable = new Promise < { [key: string]: number } > ((resolve, reject) => {
 
-        /*
+        
         this.http.get<any>(this.API_URL + "?base=" + "USD" + "&symbols=" + USER_APPROX_PREFERRED_CURRENCY, {
           responseType: 'json',
           headers: {
@@ -40,7 +40,7 @@ export class CurrencyConversionService {
             // console.log(msg);
           }
         });
-        */
+        
       });    
     } else {
       // This is a crappy way to handle "currency not recognized" cases as its coupled with behaviour in
