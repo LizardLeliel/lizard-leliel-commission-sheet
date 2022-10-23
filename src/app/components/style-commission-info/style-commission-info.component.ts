@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, LOCALE_ID } from '@angular/core';
-import { getLocaleId, getLocaleCurrencyCode, APP_BASE_HREF } from '@angular/common';
+import { getLocaleId, getLocaleCurrencyCode } from '@angular/common';
 
 // Todo: determine debug flags
 import { StyleCommissionInfo } from '../../models/commission-info';

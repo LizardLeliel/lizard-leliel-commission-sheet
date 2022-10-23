@@ -36,7 +36,7 @@
 		}
 	}
 
-	.card-text {
+	.card-text.smush-left {
 		width: 66%;
 	}
 
@@ -46,8 +46,8 @@
 			height:  500px;
 		}
 
-		.card-text {
-			/*width: 100%;*/
+		.card-text.smush-left {
+			width: 100%;
 		}
 
 		img.bump-left-on-small {
@@ -57,18 +57,31 @@
 
 }
 
-
 .wide-card-container {
 	border-radius: 8px;
 	object-fit: cover;
 	height: content;
 
-	.wide-card {
+	.card {
+		margin-bottom: 0px;
+	}
+
+	.card-img-overlay {
+		padding: 2rem;
+		border-radius: 0;
+	}
+
+	img {
+		object-fit: cover;
 		border-radius: 0px;
 
-		.card-img-overlay {
-			padding: 2rem;
-		}
+		height: unset;
+	}
+
+	.right-side-thing-rename-later {
+		background-color:  #333;
+		padding: 2rem;
+		height:  100%;
 	}
 }
 

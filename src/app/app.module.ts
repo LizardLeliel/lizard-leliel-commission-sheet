@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { NgbConfig } from '@ng-bootstrap/ng-bootstrap'; 
@@ -23,7 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
 
     HttpClientModule,
   ],
-  providers: [],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
