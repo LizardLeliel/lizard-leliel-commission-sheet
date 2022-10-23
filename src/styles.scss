@@ -1,7 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* $primary: #0074d9; */
+$danger: #e6c1c6;
+$success: #abd4b3;
+$warning: #f5efd5;
+
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+
+img.top {
+	object-position: top;
+}
+
+img.left {
+	object-position: left;
+}
+
+img {
+	object-position: center;
+}
+
+p {
+	font-size: 18px;
+}
 
 
 .wide-card {
@@ -33,18 +55,6 @@
 	text-shadow: #000 0px 0px 5px;
 }
 
-img.top {
-	object-position: top;
-}
-
-img.left {
-	object-position: left;
-}
-
-img {
-	object-position: center;
-}
-
-p {
-	font-size: 18px;
+.bigger-text p {
+	font-size: 1.4rem;
 }

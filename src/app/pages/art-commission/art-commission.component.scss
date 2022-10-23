@@ -29,16 +29,6 @@
 	object-fit: cover;
 	height: content;
 
-	.wide-card-title {
-		padding: 2rem;
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
-
-		/* background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .8));*/
-		background-color: #333;
-		color: white;
-	}
-
 	.wide-card {
 		border-radius: 0px;
 
@@ -47,6 +37,18 @@
 		}
 	}
 }
+
+
+.wide-title {
+	padding: 2rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+
+	/* background-image: linear-gradient(180deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .8));*/
+	background-color: #333;
+	color: white;
+}
+
 
 .card-img.left-side {
 	/* the 4rem accounts for padding. I'll use scss variables later */
@@ -87,4 +89,10 @@
 		left: calc(50% + 2rem);
 		width: 50%;
 	}
+}
+
+.commission-me {
+	font-size:  3.8rem;
+	padding-top:  2.4rem;
+	padding-bottom: 2.4rem;
 }
