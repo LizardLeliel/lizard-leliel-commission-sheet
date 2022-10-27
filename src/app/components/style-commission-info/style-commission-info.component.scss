@@ -1,3 +1,7 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+@import "/node_modules/bootstrap/scss/mixins";
+
 :host {
 	border-radius: 0px;
 	margin-bottom: 0 !important;
@@ -13,4 +17,13 @@ img {
 
 .card-img-overlay {
 	border-radius: 0px;
+}
+
+
+/* Egregious solution until I can think of a better way to handle positioning card images */
+@include media-breakpoint-only(md) {
+	img.bumb-lg-down {
+			object-position: left 50% top 50%;
+			/*visibility: hidden;*/
+	}
 }
