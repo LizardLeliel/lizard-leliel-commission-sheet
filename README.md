@@ -1,9 +1,3 @@
-# LizardLeliel.Github.Io
+# Lizard Leliel Commission Sheet
 
-This is a personal website. It features these pages:
-- General about me
-- Programming Portfolio
-- Game Design Portfolio
-- Art Commission Info
-
-Written in Angular.
+This is a commission sheet for art I offer. Written in Angular.
