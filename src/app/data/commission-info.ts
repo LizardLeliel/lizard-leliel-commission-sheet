@@ -34,19 +34,19 @@ export const TRADITIONAL_STYLES: StyleCommissionInfo[] = [
 	{
 		name: 		 "Shaded Graphite",
 		description: "Graphite pencil drawing with shading, bold contour outlining.",
-		USDPrice:	 35,
+		USDPrice:	 25,
 		imgURL: 	 "/assets/styleTradShaded.png"
 	},
 	{
 		name: 		 "Charcoal",
 		description: "Character will be drawn with charcoal, giving the piece rich black-and-white values",
-		USDPrice:	 50,
+		USDPrice:	 40,
 		imgURL: 	 "/assets/styleTradCharcoal.png",
 	},
 	{
 		name: 		 "Midtone Paper Charcoal",
 		description: "Character will be drawn with charcoal and chalk on midtone paper, giving greather depth to the range of tones.",
-		USDPrice:	 55,
+		USDPrice:	 45,
 		imgURL: 	 "/assets/styleTradMidtone.png",
 	},
 ];
@@ -57,8 +57,9 @@ export const ADDITIONAL_INFO: { [key: string]: number } = {
 	fullBodySketch: 5,
 
 	simpleBackground: 0,
-	complicatedBackground: 15,
-	complicatedBackgroundSketch: 10,
+	complicatedBackground: 5,
+	veryComplicatedBackground: 15,
+	veryComplicatedBackgroundSketch: 10
 }
 
 

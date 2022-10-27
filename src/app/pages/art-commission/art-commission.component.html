@@ -103,13 +103,14 @@
 		<!-- Backgrounds -->
 		<div class="wide-title pop-text"> <h1> Background </h1> </div>
 
+		<!-- Simple -->
 		<div class="card-group pop-text">
 			<div class="card">
 				<img class="card-img" style="height: 320px" src="/assets/additionalBackgroundSimple.png">
 				<div class="card-img-overlay header-gradient">
-					<h3 class="card-title"> Simple Background </h3>
+					<h3 class="card-title"> Non-Background </h3>
 					<p class="card-text">
-						Background is at most a light pattern. 
+						Either there is no background, or the background is a light pattern. 
 					</p>
 				</div>
 
@@ -122,14 +123,30 @@
 			<div class="card">
 				<img class="card-img left" style="height: 320px" src="/assets/additionalBackgroundComplex.png">
 				<div class="card-img-overlay header-gradient">
-					<h3 class="card-title"> Complex Background </h3>
+					<h3 class="card-title"> Simple Background </h3>
 					<p class="card-text">
-						Background has recognizable features.
+						Background has simple features and contains few details.
 					</p>
 
 				</div>
 				<div class="card-img-overlay">
-					<h4 class="card-text bottom"> +<span [app-quick-currency-convert]="ADDITIONAL_INFO.complicatedBackground"></span> <br> (+<span [app-quick-currency-convert]="ADDITIONAL_INFO.complicatedBackgroundSketch" [show-code]="false"></span> if clean sketch)
+					<h4 class="card-text bottom"> +<span [app-quick-currency-convert]="ADDITIONAL_INFO.complicatedBackground"></span> 
+						<!-- <br> (+<span [app-quick-currency-convert]="ADDITIONAL_INFO.complicatedBackgroundSketch" [show-code]="false"></span> if clean sketch) -->
+					</h4>
+				</div>
+			</div>
+
+			<div class="card">
+				<img class="card-img left" style="height: 320px" src="/assets/additionalBackgroundVeryComplex.png">
+				<div class="card-img-overlay header-gradient">
+					<h3 class="card-title"> Complex Background </h3>
+					<p class="card-text">
+						Background is complicated, and/or the characters interact with it significantly.
+					</p>
+
+				</div>
+				<div class="card-img-overlay">
+					<h4 class="card-text bottom"> +<span [app-quick-currency-convert]="ADDITIONAL_INFO.veryComplicatedBackground"></span> <br> (+<span [app-quick-currency-convert]="ADDITIONAL_INFO.veryComplicatedBackgroundSketch" [show-code]="false"></span> if clean sketch)
 					</h4>
 				</div>
 			</div>
@@ -166,11 +183,11 @@
 <div class="commission-me card border mb-3 rounded shadow-lg mt-5 mb-5">
 	<h1 class="wide-title rounded-top text-center"> <u> Commission Me! </u> </h1>
 	<div class="card-text bigger-text p-3 px-5">
-		<p> To request a commission, email your commission details at <a href="mailto:halifaxlarose@gmail.com?subject=I want a commission!&body=Write the details of your commission here:">halifaxlarose@gmail.com</a> or reach out to Lizard#7967 on Discord. I will list a price calculated from the information above and once all details and initial payments are settled. </p>
+		<p> To request a commission, email your commission details at <a href="mailto:halifaxlarose@gmail.com?subject=I want a commission!&body=Write the details of your commission here:">halifaxlarose@gmail.com</a> or DM Lizard#7967 on Discord or @LizardLeliel on Twitter with your request. I will list a price calculated from the information above and will begin the commission once all details and initial payments are settled. </p>
 
-		<p><u> All transactions will be processed through paypal! </u></p>
+		<p><u> All transactions will be processed through paypal!</u> My paypal is the same as the email given above.</p>
 
-		<p> Please give me as much detail about your desired commission as possible! </p>
+		<p> Please give me as much detail about your desired commission as possible, including details of your character's personality - it helps! </p>
 	</div>
 </div>
 
@@ -181,7 +198,7 @@
 <div class="content-card card rounded border-0" style="overflow: hidden">
 	<h2 class="wide-title" style="margin-bottom: 0px;"> What about emotes, character reference sheets, story covers, and profile icons? </h2>
 	<p class="card-text border p-4"> 
-		Emotes, character reference sheets, story covers, and profile icons will be treated as regular commissions, and will be priced accordingly.
+		Emotes, character reference sheets, story covers, and profile icons will be treated as regular commissions, and will be priced accordingly. Ref sheet will be treated as one character.
 	</p>
 </div>
 
@@ -226,12 +243,14 @@
 	<ul class="card-text border py-3">
 		<li> All commissions will be performed via paypal. </li>
 		<li> I will charge 50% up front and 50% at completion. This will be changed to 100% up-front charge at a later date.</li>
-		<li> At significant milestones, I will show you a work-in-progress and ask for your feedback. Changes are generally free, although I will charge a fee if I feel the original details of the commission are being changed. </li>
-		<li> Unless requested otherwise, I may use you commission to promote myself on this webpage.</li>
+		<li> I will have final say on which commission options apply to a commission request. </li>
+		<li> At significant milestones, I will show you a work-in-progress and ask for your feedback. Changes are generally free, although I will charge a fee if I feel the original details of the commission are being revised. </li>
+		<li> Unless requested otherwise, I may use any completed commissions to promote myself on this webpage.</li>
 		<li> All art will feature my signature as a watermark. This is not negotiable. </li>
-		<li> I will try to complete your commission within two weeks. If I'm unable to meet that deadline due to obligations that take priority, I will reach out to you and notify you of the delay. </li>
+		<li> I will try to complete your commission within two weeks. If I'm unable to meet that deadline due to obligations that take priority, I will reach out to you and notify you of the delay. This rule is likely to change!</li>
 		<li> If you share a commission publically, please credit me as "LizardLeliel!" </li>
 		<li> You may use a commission to promote your story, as long as I receive proper credit. </li>
+		<li> I may update and change the terms of services and prices at any time. Price changes will not impact ongoing commissions. </li>
 	</ul>
 </div>
 
