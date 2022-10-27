@@ -8,8 +8,8 @@ import { ArtCommissionComponent }  from './pages/art-commission/art-commission.c
 import { NotFoundComponent }       from './pages/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '',                component: AboutMeComponent },
-  { path: 'art',             component: ArtCommissionComponent },
+  { path: '',                component: ArtCommissionComponent },
+  { path: 'art',             component: ArtCommissionComponent }, // Duplicate link for people still expecting the sheet to be found in /art/
   { path: '**',              component: NotFoundComponent },
 ];
 
